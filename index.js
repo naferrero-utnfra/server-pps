@@ -87,8 +87,8 @@ app.post("/send-mail", async (req, res) => {
       port: 465,
       secure: true,
       auth: {
-        user: "comandaferrero@gmail.com",
-        pass: "lqplikfqqedvuvis",
+        user: process.env.MAIL,
+        pass: process.env.PASSWORD,
       },
     });
 
